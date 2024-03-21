@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#fff</color>
+    <color name="back">#030121</color>
+    <color name="colorPrimaryDark">#030121</color>
+    <color name="brown">#030121</color>
+    <color name="blue1">#0e1edc</color>
+    <color name="blue2">#1708ad</color>
+    <color name="purple">#52295f</color>
+    <color name="purpleLight">#c2acb8</color>
+    <color name="colorOnSurface">#fff</color>
+    <color name="grey">#696969</color>
+    <color name="danger">#F32013</color>
+    <color name="lightgrey">#D3D3D3</color>
+    <color name="LightBG">#EFEDED</color>
+    <!--    Alert Dialog Color-->
+    <color name="ColorPrimaryDialog">#306B34</color>
+    <color name="ColorSecondaryDialog">#FF6663</color>
+</resources>

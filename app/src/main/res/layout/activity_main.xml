@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    >
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hello"
+        android:paddingTop="20dp"
+        android:textSize="35sp"
+        android:text="Hello there, Welcome"
+        android:textColor="@color/white"
+        android:fontFamily="@font/brandon_grotesque_black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_text"
+        android:text="Sign in to continue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/brandon_grotesque_light"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:placeholderTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/username"
+                android:inputType="textEmailAddress"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/white"
+            android:hint="Password"
+            app:passwordToggleTint="@color/white"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:id="@+id/password"
+
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white"
+                app:boxStrokeColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:text="Login"
+            android:id="@+id/login"
+            android:backgroundTint="@color/blue1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:text="Signup"
+            android:id="@+id/register"
+            android:backgroundTint="@color/blue1"/>
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:id="@+id/register"-->
+        <!--            android:paddingTop="10dp"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:text="New user? Create account"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:fontFamily="@font/brandon_grotesque_light"/>-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
