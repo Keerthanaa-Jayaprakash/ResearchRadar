@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 //            return insets;
 //        });
+        sharedPreferenceClass = new SharedPreferenceClass(this);
+
         login = (Button) findViewById(R.id.login);
         email_ET = (EditText) findViewById(R.id.username);
         password_ET = (EditText) findViewById(R.id.password);
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 email = email_ET.getText().toString();
                 password = password_ET.getText().toString();
+//                startActivity(new Intent(MainActivity.this, Navigation.class));
 
                 Login(v);
             }
@@ -108,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 apiKey, new JSONObject(params), new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d("LoginPage", "onResponse: MySightings response"+response.toString());
+                Log.d("¸", "onResponse: MySightings response"+response.toString());
 
                 try {
                     if(response.getBoolean("success")) {
@@ -122,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                         sharedPreferenceClass.setValue_string("email", jsonObject.get("email").toString());
                         sharedPreferenceClass.setValue_string("name", jsonObject.get("name").toString());
                         sharedPreferenceClass.setValue_string("phone", jsonObject.get("phone").toString());
-//                        startActivity(new Intent(MainActivity.this, Signup.Navigation.class));
+                        startActivity(new Intent(MainActivity.this, Navigation.class));
 
 
                     }

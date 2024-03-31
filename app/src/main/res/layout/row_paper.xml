@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp"
+    app:contentPaddingBottom="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardView">
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="[LIBRO][B] Bluetooth Implementation and Use"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="dl.acm.org"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:layout_toStartOf="@+id/imageButton"/>
+        <TextView
+            android:id="@+id/cited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tag"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="[LIBRO][B]  Implementation and Use"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/black"/>
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/download_icon"
+            android:layout_below="@id/cited"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="FavButtonDesc" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

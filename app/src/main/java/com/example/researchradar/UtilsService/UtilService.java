@@ -17,6 +17,17 @@ public class UtilService {
             e.printStackTrace();
         }
     }
+
+    public void closeKeyboardFromFragment(Activity activity, View view) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+//        View view = (View) getView().getRootView().getWindowToken();
+//        if (view == null) {
+//            view = (View) getView().getRootView().getWindowToken();
+//        }
+        // hide the keyboard
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+
     public void showSnackBar(View view, String msg){
 
         Snackbar.make(view,msg,Snackbar.LENGTH_LONG)
@@ -34,7 +45,9 @@ public class UtilService {
     }
     public String IPAddr(){
 //        String BaseURL = "https://graduation.psgitech.ac.in/";
-        String BaseURL = "http://192.0.0.2:4444/";
+
+        String BaseURL = "http://192.168.29.206:4444/";
+//        String BaseURL = "http://192.0.0.2:4444/";
         return BaseURL;
     }
 

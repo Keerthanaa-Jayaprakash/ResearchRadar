@@ -85,6 +85,8 @@ public class Signup extends AppCompatActivity {
                 Log.d("Debug", "In Onclick2");
 
 //                if(validate(v))
+                utilService.hideKeyboard(v, Signup.this);
+
                 signupUser(v);
 
             }
